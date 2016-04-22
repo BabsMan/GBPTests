@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gbLightGray"
+        android:layout_margin="16dp">
+
+        <com.graemegrier.gametests.GameView
+            android:id="@+id/game_view"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_aspectRatio="110%"
+            app:layout_widthPercent="100%"/>
+    </android.support.percent.PercentFrameLayout>
+
+    <include layout="@layout/controller_view"/>
+</LinearLayout>
